@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nMb-uT-377">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dynamic Stack View Controller-->
+        <scene sceneID="m1I-d5-u6H">
+            <objects>
+                <viewController id="nMb-uT-377" customClass="DynamicStackViewController" customModule="Auto_Layout_Cookbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6PT-ax-Dgg"/>
+                        <viewControllerLayoutGuide type="bottom" id="BhD-m2-hhB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zgH-pN-5id">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ftG-G1-cac">
+                                <rect key="frame" x="20" y="0.0" width="560" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="qnl-Z8-Mdr">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxp-gs-Oq4">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                                <state key="normal" title="Add Item"/>
+                                                <connections>
+                                                    <action selector="addEntry:" destination="nMb-uT-377" eventType="touchUpInside" id="u9W-bf-QHJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qnl-Z8-Mdr" secondAttribute="trailing" id="LCp-EK-wEP"/>
+                                    <constraint firstAttribute="bottom" secondItem="qnl-Z8-Mdr" secondAttribute="bottom" id="WUg-Kq-J2z"/>
+                                    <constraint firstItem="qnl-Z8-Mdr" firstAttribute="width" secondItem="ftG-G1-cac" secondAttribute="width" id="ZGb-Js-bFW"/>
+                                    <constraint firstItem="qnl-Z8-Mdr" firstAttribute="top" secondItem="ftG-G1-cac" secondAttribute="top" id="gZe-uH-bew"/>
+                                    <constraint firstItem="qnl-Z8-Mdr" firstAttribute="leading" secondItem="ftG-G1-cac" secondAttribute="leading" id="wZI-fu-spT"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ftG-G1-cac" firstAttribute="trailing" secondItem="zgH-pN-5id" secondAttribute="trailingMargin" id="1jC-Sg-wyn"/>
+                            <constraint firstItem="ftG-G1-cac" firstAttribute="leading" secondItem="zgH-pN-5id" secondAttribute="leadingMargin" id="1qI-YP-sqP"/>
+                            <constraint firstItem="ftG-G1-cac" firstAttribute="top" secondItem="zgH-pN-5id" secondAttribute="topMargin" id="A5g-t6-MKo"/>
+                            <constraint firstItem="BhD-m2-hhB" firstAttribute="top" secondItem="ftG-G1-cac" secondAttribute="bottom" constant="20" id="Fq2-d4-b7n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="ftG-G1-cac" id="u98-7I-aTP"/>
+                        <outlet property="stackView" destination="qnl-Z8-Mdr" id="Ree-hW-nBB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nje-iB-k51" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="349"/>
+        </scene>
+    </scenes>
+</document>

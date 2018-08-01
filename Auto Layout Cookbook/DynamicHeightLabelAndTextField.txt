@@ -1,0 +1,5 @@
+This recipe demonstrates how to lay out a simple label-and-text-field pair. In this example, the label's font size changes. Half the time, it is shorter than the text field. The rest of the time, it is taller than the text field. This means that the constraints must dynamically adjust the views' heights, positioning the tallest view 20 points below the top layout guide.
+
+Vertically, each view has two constraints to the top layout guide. A required greater-than-or-equal-to constraint sets a minimum 20-point space between each view and the top layout guide. A second, optional, constraint pins each view to the top layout guide.  This constraint must have a priority lower than the view's content-hugging priority. The views are baseline aligned.
+
+Horizontally, the label's leading edge is pinned to the superview's leading margin. The text view's trailing edge is pinned to the superview's trailing margin, and there is a standard space between the label and text field. Because the label's content-hugging priority is higher than the text field's, the text field is stretched to fill any remaining space.

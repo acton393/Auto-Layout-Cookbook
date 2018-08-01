@@ -1,0 +1,7 @@
+This recipe demonstrates how to lay out a simple label-and-text-field pair. The example simplifies the constraint logic by assuming that the text field is always taller than the label. You define the vertical layout by simply pinning the text field to the top layout guide and then baseline aligning the two views.
+
+Horizontally, the label's leading edge is pinned to the superview's leading margin. The text view's trailing edge is pinned to the superview's trailing margin, and there is a standard space between the label and text field.
+
+Unlike the colored block examples, both the text field and the label have an intrinsic content size. As a result, you need only one constraint per axis per view to define the layout. Additionally, the label's content-hugging priority is higher than the text field's, so the text field is stretched to fill any remaining space.
+
+For a recipe that dynamically calculates the vertical layout based on the tallest view, see Label and Text Field with Dynamic Height.

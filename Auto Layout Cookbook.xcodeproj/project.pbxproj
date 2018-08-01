@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A6AB0BE1BA10DD200E8D9ED /* RecipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6AB0BD1BA10DD200E8D9ED /* RecipeTests.swift */; };
+		0AD7ADED1BA20A640005CA42 /* CookbookStoryboardIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD7ADEC1BA20A640005CA42 /* CookbookStoryboardIdentifier.swift */; };
+		9301049C1B3B59E90050658C /* FixedHeightColumns.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9301049B1B3B59E90050658C /* FixedHeightColumns.storyboard */; };
+		9301049E1B3B5E4F0050658C /* FixedHeightColumns.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9301049D1B3B5E4F0050658C /* FixedHeightColumns.txt */; };
+		930104A01B3B61E90050658C /* DynamicHeightColumns.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9301049F1B3B61E90050658C /* DynamicHeightColumns.storyboard */; };
+		930104A21B3B63590050658C /* DynamicHeightColumnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930104A11B3B63590050658C /* DynamicHeightColumnsViewController.swift */; };
+		930104A41B3B644B0050658C /* DynamicHeightColumns.txt in Resources */ = {isa = PBXBuildFile; fileRef = 930104A31B3B644B0050658C /* DynamicHeightColumns.txt */; };
+		9317C4CB1B31CE51003DD739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9317C4CA1B31CE51003DD739 /* AppDelegate.swift */; };
+		9317C4CD1B31CE51003DD739 /* RecipesContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9317C4CC1B31CE51003DD739 /* RecipesContainerViewController.swift */; };
+		9317C4D01B31CE51003DD739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9317C4CE1B31CE51003DD739 /* Main.storyboard */; };
+		9317C4D21B31CE51003DD739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9317C4D11B31CE51003DD739 /* Assets.xcassets */; };
+		9317C4D51B31CE51003DD739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9317C4D31B31CE51003DD739 /* LaunchScreen.storyboard */; };
+		931822781B3714C800A2F0EE /* SimpleStackView.txt in Resources */ = {isa = PBXBuildFile; fileRef = 931822771B3714C800A2F0EE /* SimpleStackView.txt */; };
+		932151A61B3CA861009654CF /* AspectFitImageView.txt in Resources */ = {isa = PBXBuildFile; fileRef = 932151A51B3CA861009654CF /* AspectFitImageView.txt */; };
+		932151A81B3CABD5009654CF /* AspectRatioImageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932151A71B3CABD5009654CF /* AspectRatioImageView.storyboard */; };
+		932151AA1B3CAD98009654CF /* AspectRatioImageView.txt in Resources */ = {isa = PBXBuildFile; fileRef = 932151A91B3CAD98009654CF /* AspectRatioImageView.txt */; };
+		932151AC1B3D7D84009654CF /* DynamicTextAndReadability.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932151AB1B3D7D84009654CF /* DynamicTextAndReadability.storyboard */; };
+		932151AE1B3D8020009654CF /* DynamicTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932151AD1B3D8020009654CF /* DynamicTextViewController.swift */; };
+		932151B01B3D848B009654CF /* DynamicTextAndReadability.txt in Resources */ = {isa = PBXBuildFile; fileRef = 932151AF1B3D848B009654CF /* DynamicTextAndReadability.txt */; };
+		932151B21B3D8E48009654CF /* SelfSizingTableViewCells.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932151B11B3D8E48009654CF /* SelfSizingTableViewCells.storyboard */; };
+		932151B41B3D8F14009654CF /* SelfSizingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932151B31B3D8F14009654CF /* SelfSizingTableViewCell.swift */; };
+		932151B61B3D904F009654CF /* SelfSizingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932151B51B3D904F009654CF /* SelfSizingTableViewController.swift */; };
+		932151B81B3D9291009654CF /* SelfSizingTableViewCells.txt in Resources */ = {isa = PBXBuildFile; fileRef = 932151B71B3D9291009654CF /* SelfSizingTableViewCells.txt */; };
+		9339FDE01B40880D0098CF0D /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9339FDDF1B40880D0098CF0D /* ScrollView.storyboard */; };
+		9339FDE21B408CA80098CF0D /* ScrollView.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9339FDE11B408CA80098CF0D /* ScrollView.txt */; };
+		9339FDE51B4092FB0098CF0D /* SizeClasses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9339FDE41B4092FB0098CF0D /* SizeClasses.storyboard */; };
+		9339FDE71B4094690098CF0D /* SizeClasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9339FDE61B4094690098CF0D /* SizeClasses.txt */; };
+		9339FDE91B409DB60098CF0D /* AnimatingChanges.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9339FDE81B409DB60098CF0D /* AnimatingChanges.storyboard */; };
+		9339FDEB1B40A0100098CF0D /* AnimatingChangesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9339FDEA1B40A0100098CF0D /* AnimatingChangesViewController.swift */; };
+		9339FDED1B40A5560098CF0D /* AnimatingChanges.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9339FDEC1B40A5560098CF0D /* AnimatingChanges.txt */; };
+		9339FDEF1B40AB470098CF0D /* UIKitDynamics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9339FDEE1B40AB470098CF0D /* UIKitDynamics.storyboard */; };
+		935936411B367B6B003F8151 /* AdaptiveSingleView.txt in Resources */ = {isa = PBXBuildFile; fileRef = 935936401B367B6B003F8151 /* AdaptiveSingleView.txt */; };
+		93609A7D1B3AFF5D0050C029 /* TwoEqualWidthViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93609A7C1B3AFF5D0050C029 /* TwoEqualWidthViews.storyboard */; };
+		93609A7F1B3AFFFC0050C029 /* TwoEqualWidthViews.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93609A7E1B3AFFFC0050C029 /* TwoEqualWidthViews.txt */; };
+		93609A811B3B02590050C029 /* TwoDifferentWidthViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93609A801B3B02590050C029 /* TwoDifferentWidthViews.storyboard */; };
+		93609A831B3B03A80050C029 /* TwoDifferentWidthViews.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93609A821B3B03A80050C029 /* TwoDifferentWidthViews.txt */; };
+		93609A851B3B05740050C029 /* TwoViewsWithComplexWidths.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93609A841B3B05740050C029 /* TwoViewsWithComplexWidths.storyboard */; };
+		93609A871B3B06730050C029 /* TwoViewsWithComplexWidths.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93609A861B3B06730050C029 /* TwoViewsWithComplexWidths.txt */; };
+		93609A891B3B08DA0050C029 /* SimpleLabelAndTextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93609A881B3B08DA0050C029 /* SimpleLabelAndTextField.storyboard */; };
+		93609A8B1B3B099C0050C029 /* SimpleLabelAndTextField.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93609A8A1B3B099C0050C029 /* SimpleLabelAndTextField.txt */; };
+		93609A8D1B3B0CCE0050C029 /* DynamicHeightLabelAndTextField.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93609A8C1B3B0CCE0050C029 /* DynamicHeightLabelAndTextField.storyboard */; };
+		93609A8F1B3B0EF40050C029 /* DynamicHeightLabelAndTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93609A8E1B3B0EF40050C029 /* DynamicHeightLabelAndTextFieldViewController.swift */; };
+		93609A911B3B0FDE0050C029 /* DynamicHeightLabelAndTextField.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93609A901B3B0FDE0050C029 /* DynamicHeightLabelAndTextField.txt */; };
+		936B0DE41B3C92F60056A829 /* AspectFitImageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936B0DE31B3C92F60056A829 /* AspectFitImageView.storyboard */; };
+		936BFD0D1B3854CE00B5E955 /* NestedStackViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936BFD0C1B3854CE00B5E955 /* NestedStackViews.storyboard */; };
+		936BFD0F1B385D9800B5E955 /* NestedStackViews.txt in Resources */ = {isa = PBXBuildFile; fileRef = 936BFD0E1B385D9800B5E955 /* NestedStackViews.txt */; };
+		937EBA391B39B887001A83F8 /* DynamicStackView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937EBA381B39B887001A83F8 /* DynamicStackView.storyboard */; };
+		937EBA3B1B39BB8A001A83F8 /* DynamicStackView.txt in Resources */ = {isa = PBXBuildFile; fileRef = 937EBA3A1B39BB8A001A83F8 /* DynamicStackView.txt */; };
+		937EBA3E1B39BC26001A83F8 /* DynamicStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937EBA3D1B39BC26001A83F8 /* DynamicStackViewController.swift */; };
+		93912DDC1B59D92600A99852 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93912DDB1B59D92600A99852 /* InformationViewController.swift */; };
+		93B56C0F1B40ACAC00FA0799 /* UIKitDynamics.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93B56C0E1B40ACAC00FA0799 /* UIKitDynamics.txt */; };
+		93B56C111B40AFE600FA0799 /* UIKitDynamicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B56C101B40AFE600FA0799 /* UIKitDynamicsViewController.swift */; };
+		93BFCC1C1B5D7AFD006FF54A /* ButtonsSizeClass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BFCC1B1B5D7AFD006FF54A /* ButtonsSizeClass.storyboard */; };
+		93BFCC1E1B5D7C73006FF54A /* ButtonsSizeClass.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93BFCC1D1B5D7C73006FF54A /* ButtonsSizeClass.txt */; };
+		93CF8D6A1B3321BE00BDBFC7 /* SimpleSingleView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CF8D681B3321BE00BDBFC7 /* SimpleSingleView.storyboard */; };
+		93CF8D6F1B336CF200BDBFC7 /* Cookbook.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93CF8D6E1B336CF200BDBFC7 /* Cookbook.plist */; };
+		93CF8D731B336FE700BDBFC7 /* AdaptiveSingleView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CF8D721B336FE700BDBFC7 /* AdaptiveSingleView.storyboard */; };
+		93CF8D7D1B33A40200BDBFC7 /* SimpleSingleView.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93CF8D7C1B33A40200BDBFC7 /* SimpleSingleView.txt */; };
+		93DB21321B3712C10055D6EC /* SimpleStackView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93DB21311B3712C10055D6EC /* SimpleStackView.storyboard */; };
+		93F720C21B3C476800041731 /* TwoEqualWidthButtons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F720C11B3C476800041731 /* TwoEqualWidthButtons.storyboard */; };
+		93F720C41B3C48B300041731 /* TwoEqualWidthButtons.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93F720C31B3C48B300041731 /* TwoEqualWidthButtons.txt */; };
+		93F720C61B3C4BC700041731 /* ThreeEqualWidthButtons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F720C51B3C4BC700041731 /* ThreeEqualWidthButtons.storyboard */; };
+		93F720C81B3C4D7700041731 /* ThreeEqualWidthButtons.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93F720C71B3C4D7700041731 /* ThreeEqualWidthButtons.txt */; };
+		93F720CA1B3C4FF600041731 /* EqualWhiteSpace.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F720C91B3C4FF600041731 /* EqualWhiteSpace.storyboard */; };
+		93F720CC1B3C518100041731 /* EqualWhiteSpace.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93F720CB1B3C518100041731 /* EqualWhiteSpace.txt */; };
+		93F720CE1B3C582300041731 /* GroupingViews.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F720CD1B3C582300041731 /* GroupingViews.storyboard */; };
+		93F720D01B3C5A6D00041731 /* GroupingViews.txt in Resources */ = {isa = PBXBuildFile; fileRef = 93F720CF1B3C5A6D00041731 /* GroupingViews.txt */; };
+		B538D1C91BA0562600674D8D /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538D1C81BA0562600674D8D /* Recipe.swift */; };
+		B538D1CD1BA05C5500674D8D /* Recipe+Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538D1CC1BA05C5500674D8D /* Recipe+Storyboards.swift */; };
+		B538D1CF1BA069ED00674D8D /* Recipe+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538D1CE1BA069ED00674D8D /* Recipe+Loading.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A6AB0C01BA10DD200E8D9ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9317C4BF1B31CE51003DD739 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9317C4C61B31CE51003DD739;
+			remoteInfo = "Auto Layout Cookbook";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A6AB0BB1BA10DD200E8D9ED /* UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A6AB0BD1BA10DD200E8D9ED /* RecipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTests.swift; sourceTree = "<group>"; };
+		0A6AB0BF1BA10DD200E8D9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AD7ADEC1BA20A640005CA42 /* CookbookStoryboardIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookbookStoryboardIdentifier.swift; sourceTree = "<group>"; };
+		9301049B1B3B59E90050658C /* FixedHeightColumns.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FixedHeightColumns.storyboard; sourceTree = "<group>"; };
+		9301049D1B3B5E4F0050658C /* FixedHeightColumns.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FixedHeightColumns.txt; sourceTree = "<group>"; };
+		9301049F1B3B61E90050658C /* DynamicHeightColumns.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicHeightColumns.storyboard; sourceTree = "<group>"; };
+		930104A11B3B63590050658C /* DynamicHeightColumnsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightColumnsViewController.swift; sourceTree = "<group>"; };
+		930104A31B3B644B0050658C /* DynamicHeightColumns.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DynamicHeightColumns.txt; sourceTree = "<group>"; };
+		9317C4C71B31CE51003DD739 /* Auto Layout Cookbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Layout Cookbook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9317C4CA1B31CE51003DD739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9317C4CC1B31CE51003DD739 /* RecipesContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesContainerViewController.swift; sourceTree = "<group>"; };
+		9317C4CF1B31CE51003DD739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9317C4D11B31CE51003DD739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9317C4D41B31CE51003DD739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9317C4D61B31CE51003DD739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		931822771B3714C800A2F0EE /* SimpleStackView.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleStackView.txt; sourceTree = "<group>"; };
+		932151A51B3CA861009654CF /* AspectFitImageView.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AspectFitImageView.txt; sourceTree = "<group>"; };
+		932151A71B3CABD5009654CF /* AspectRatioImageView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AspectRatioImageView.storyboard; sourceTree = "<group>"; };
+		932151A91B3CAD98009654CF /* AspectRatioImageView.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AspectRatioImageView.txt; sourceTree = "<group>"; };
+		932151AB1B3D7D84009654CF /* DynamicTextAndReadability.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicTextAndReadability.storyboard; sourceTree = "<group>"; };
+		932151AD1B3D8020009654CF /* DynamicTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTextViewController.swift; sourceTree = "<group>"; };
+		932151AF1B3D848B009654CF /* DynamicTextAndReadability.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DynamicTextAndReadability.txt; sourceTree = "<group>"; };
+		932151B11B3D8E48009654CF /* SelfSizingTableViewCells.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelfSizingTableViewCells.storyboard; sourceTree = "<group>"; };
+		932151B31B3D8F14009654CF /* SelfSizingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfSizingTableViewCell.swift; sourceTree = "<group>"; };
+		932151B51B3D904F009654CF /* SelfSizingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfSizingTableViewController.swift; sourceTree = "<group>"; };
+		932151B71B3D9291009654CF /* SelfSizingTableViewCells.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SelfSizingTableViewCells.txt; sourceTree = "<group>"; };
+		9339FDDF1B40880D0098CF0D /* ScrollView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
+		9339FDE11B408CA80098CF0D /* ScrollView.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScrollView.txt; sourceTree = "<group>"; };
+		9339FDE41B4092FB0098CF0D /* SizeClasses.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SizeClasses.storyboard; sourceTree = "<group>"; };
+		9339FDE61B4094690098CF0D /* SizeClasses.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SizeClasses.txt; sourceTree = "<group>"; };
+		9339FDE81B409DB60098CF0D /* AnimatingChanges.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AnimatingChanges.storyboard; sourceTree = "<group>"; };
+		9339FDEA1B40A0100098CF0D /* AnimatingChangesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatingChangesViewController.swift; sourceTree = "<group>"; };
+		9339FDEC1B40A5560098CF0D /* AnimatingChanges.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AnimatingChanges.txt; sourceTree = "<group>"; };
+		9339FDEE1B40AB470098CF0D /* UIKitDynamics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIKitDynamics.storyboard; sourceTree = "<group>"; };
+		935936401B367B6B003F8151 /* AdaptiveSingleView.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AdaptiveSingleView.txt; sourceTree = "<group>"; };
+		93609A7C1B3AFF5D0050C029 /* TwoEqualWidthViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TwoEqualWidthViews.storyboard; sourceTree = "<group>"; };
+		93609A7E1B3AFFFC0050C029 /* TwoEqualWidthViews.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TwoEqualWidthViews.txt; sourceTree = "<group>"; };
+		93609A801B3B02590050C029 /* TwoDifferentWidthViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TwoDifferentWidthViews.storyboard; sourceTree = "<group>"; };
+		93609A821B3B03A80050C029 /* TwoDifferentWidthViews.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TwoDifferentWidthViews.txt; sourceTree = "<group>"; };
+		93609A841B3B05740050C029 /* TwoViewsWithComplexWidths.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TwoViewsWithComplexWidths.storyboard; sourceTree = "<group>"; };
+		93609A861B3B06730050C029 /* TwoViewsWithComplexWidths.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TwoViewsWithComplexWidths.txt; sourceTree = "<group>"; };
+		93609A881B3B08DA0050C029 /* SimpleLabelAndTextField.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleLabelAndTextField.storyboard; sourceTree = "<group>"; };
+		93609A8A1B3B099C0050C029 /* SimpleLabelAndTextField.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleLabelAndTextField.txt; sourceTree = "<group>"; };
+		93609A8C1B3B0CCE0050C029 /* DynamicHeightLabelAndTextField.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicHeightLabelAndTextField.storyboard; sourceTree = "<group>"; };
+		93609A8E1B3B0EF40050C029 /* DynamicHeightLabelAndTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightLabelAndTextFieldViewController.swift; sourceTree = "<group>"; };
+		93609A901B3B0FDE0050C029 /* DynamicHeightLabelAndTextField.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DynamicHeightLabelAndTextField.txt; sourceTree = "<group>"; };
+		936B0DE31B3C92F60056A829 /* AspectFitImageView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AspectFitImageView.storyboard; sourceTree = "<group>"; };
+		936BFD0C1B3854CE00B5E955 /* NestedStackViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NestedStackViews.storyboard; sourceTree = "<group>"; };
+		936BFD0E1B385D9800B5E955 /* NestedStackViews.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NestedStackViews.txt; sourceTree = "<group>"; };
+		937EBA381B39B887001A83F8 /* DynamicStackView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DynamicStackView.storyboard; sourceTree = "<group>"; };
+		937EBA3A1B39BB8A001A83F8 /* DynamicStackView.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DynamicStackView.txt; sourceTree = "<group>"; };
+		937EBA3D1B39BC26001A83F8 /* DynamicStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicStackViewController.swift; sourceTree = "<group>"; };
+		93912DDB1B59D92600A99852 /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		93B56C0E1B40ACAC00FA0799 /* UIKitDynamics.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UIKitDynamics.txt; sourceTree = "<group>"; };
+		93B56C101B40AFE600FA0799 /* UIKitDynamicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitDynamicsViewController.swift; sourceTree = "<group>"; };
+		93BFCC1B1B5D7AFD006FF54A /* ButtonsSizeClass.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ButtonsSizeClass.storyboard; sourceTree = "<group>"; };
+		93BFCC1D1B5D7C73006FF54A /* ButtonsSizeClass.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ButtonsSizeClass.txt; sourceTree = "<group>"; };
+		93CF8D691B3321BE00BDBFC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SimpleSingleView.storyboard; sourceTree = "<group>"; };
+		93CF8D6E1B336CF200BDBFC7 /* Cookbook.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cookbook.plist; sourceTree = "<group>"; };
+		93CF8D721B336FE700BDBFC7 /* AdaptiveSingleView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AdaptiveSingleView.storyboard; sourceTree = "<group>"; };
+		93CF8D7C1B33A40200BDBFC7 /* SimpleSingleView.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleSingleView.txt; sourceTree = "<group>"; };
+		93DB21311B3712C10055D6EC /* SimpleStackView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleStackView.storyboard; sourceTree = "<group>"; };
+		93F720C11B3C476800041731 /* TwoEqualWidthButtons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TwoEqualWidthButtons.storyboard; sourceTree = "<group>"; };
+		93F720C31B3C48B300041731 /* TwoEqualWidthButtons.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TwoEqualWidthButtons.txt; sourceTree = "<group>"; };
+		93F720C51B3C4BC700041731 /* ThreeEqualWidthButtons.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ThreeEqualWidthButtons.storyboard; sourceTree = "<group>"; };
+		93F720C71B3C4D7700041731 /* ThreeEqualWidthButtons.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ThreeEqualWidthButtons.txt; sourceTree = "<group>"; };
+		93F720C91B3C4FF600041731 /* EqualWhiteSpace.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EqualWhiteSpace.storyboard; sourceTree = "<group>"; };
+		93F720CB1B3C518100041731 /* EqualWhiteSpace.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EqualWhiteSpace.txt; sourceTree = "<group>"; };
+		93F720CD1B3C582300041731 /* GroupingViews.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GroupingViews.storyboard; sourceTree = "<group>"; };
+		93F720CF1B3C5A6D00041731 /* GroupingViews.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GroupingViews.txt; sourceTree = "<group>"; };
+		B538D1C81BA0562600674D8D /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		B538D1CC1BA05C5500674D8D /* Recipe+Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipe+Storyboards.swift"; sourceTree = "<group>"; };
+		B538D1CE1BA069ED00674D8D /* Recipe+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipe+Loading.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A6AB0B81BA10DD200E8D9ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9317C4C41B31CE51003DD739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A6AB0BC1BA10DD200E8D9ED /* UI Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0A6AB0BD1BA10DD200E8D9ED /* RecipeTests.swift */,
+				0A6AB0BF1BA10DD200E8D9ED /* Info.plist */,
+			);
+			path = "UI Tests";
+			sourceTree = "<group>";
+		};
+		9317C4BE1B31CE51003DD739 = {
+			isa = PBXGroup;
+			children = (
+				9317C4C91B31CE51003DD739 /* Auto Layout Cookbook */,
+				0A6AB0BC1BA10DD200E8D9ED /* UI Tests */,
+				9317C4C81B31CE51003DD739 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9317C4C81B31CE51003DD739 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9317C4C71B31CE51003DD739 /* Auto Layout Cookbook.app */,
+				0A6AB0BB1BA10DD200E8D9ED /* UI Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9317C4C91B31CE51003DD739 /* Auto Layout Cookbook */ = {
+			isa = PBXGroup;
+			children = (
+				9317C4CA1B31CE51003DD739 /* AppDelegate.swift */,
+				0AD7ADEC1BA20A640005CA42 /* CookbookStoryboardIdentifier.swift */,
+				9317C4CC1B31CE51003DD739 /* RecipesContainerViewController.swift */,
+				93912DDB1B59D92600A99852 /* InformationViewController.swift */,
+				9317C4CE1B31CE51003DD739 /* Main.storyboard */,
+				93CF8D741B33712500BDBFC7 /* Recipe Storyboards */,
+				937EBA3C1B39BBFF001A83F8 /* Recipe View Controllers */,
+				93CF8D751B33716200BDBFC7 /* Model */,
+				93CF8D6B1B336CAD00BDBFC7 /* Resources */,
+				9317C4D11B31CE51003DD739 /* Assets.xcassets */,
+				9317C4D31B31CE51003DD739 /* LaunchScreen.storyboard */,
+				9317C4D61B31CE51003DD739 /* Info.plist */,
+			);
+			path = "Auto Layout Cookbook";
+			sourceTree = "<group>";
+		};
+		937EBA3C1B39BBFF001A83F8 /* Recipe View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9339FDEA1B40A0100098CF0D /* AnimatingChangesViewController.swift */,
+				930104A11B3B63590050658C /* DynamicHeightColumnsViewController.swift */,
+				93609A8E1B3B0EF40050C029 /* DynamicHeightLabelAndTextFieldViewController.swift */,
+				937EBA3D1B39BC26001A83F8 /* DynamicStackViewController.swift */,
+				932151AD1B3D8020009654CF /* DynamicTextViewController.swift */,
+				932151B31B3D8F14009654CF /* SelfSizingTableViewCell.swift */,
+				932151B51B3D904F009654CF /* SelfSizingTableViewController.swift */,
+				93B56C101B40AFE600FA0799 /* UIKitDynamicsViewController.swift */,
+			);
+			name = "Recipe View Controllers";
+			sourceTree = "<group>";
+		};
+		93CF8D6B1B336CAD00BDBFC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93CF8D6E1B336CF200BDBFC7 /* Cookbook.plist */,
+				931822771B3714C800A2F0EE /* SimpleStackView.txt */,
+				936BFD0E1B385D9800B5E955 /* NestedStackViews.txt */,
+				937EBA3A1B39BB8A001A83F8 /* DynamicStackView.txt */,
+				93CF8D7C1B33A40200BDBFC7 /* SimpleSingleView.txt */,
+				935936401B367B6B003F8151 /* AdaptiveSingleView.txt */,
+				93609A7E1B3AFFFC0050C029 /* TwoEqualWidthViews.txt */,
+				93609A821B3B03A80050C029 /* TwoDifferentWidthViews.txt */,
+				93609A861B3B06730050C029 /* TwoViewsWithComplexWidths.txt */,
+				93609A8A1B3B099C0050C029 /* SimpleLabelAndTextField.txt */,
+				93609A901B3B0FDE0050C029 /* DynamicHeightLabelAndTextField.txt */,
+				9301049D1B3B5E4F0050658C /* FixedHeightColumns.txt */,
+				930104A31B3B644B0050658C /* DynamicHeightColumns.txt */,
+				93F720C31B3C48B300041731 /* TwoEqualWidthButtons.txt */,
+				93F720C71B3C4D7700041731 /* ThreeEqualWidthButtons.txt */,
+				93F720CB1B3C518100041731 /* EqualWhiteSpace.txt */,
+				93BFCC1D1B5D7C73006FF54A /* ButtonsSizeClass.txt */,
+				93F720CF1B3C5A6D00041731 /* GroupingViews.txt */,
+				932151A51B3CA861009654CF /* AspectFitImageView.txt */,
+				932151A91B3CAD98009654CF /* AspectRatioImageView.txt */,
+				932151AF1B3D848B009654CF /* DynamicTextAndReadability.txt */,
+				932151B71B3D9291009654CF /* SelfSizingTableViewCells.txt */,
+				9339FDE11B408CA80098CF0D /* ScrollView.txt */,
+				9339FDE61B4094690098CF0D /* SizeClasses.txt */,
+				9339FDEC1B40A5560098CF0D /* AnimatingChanges.txt */,
+				93B56C0E1B40ACAC00FA0799 /* UIKitDynamics.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		93CF8D741B33712500BDBFC7 /* Recipe Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				93CF8D721B336FE700BDBFC7 /* AdaptiveSingleView.storyboard */,
+				936B0DE31B3C92F60056A829 /* AspectFitImageView.storyboard */,
+				932151A71B3CABD5009654CF /* AspectRatioImageView.storyboard */,
+				9339FDE81B409DB60098CF0D /* AnimatingChanges.storyboard */,
+				93BFCC1B1B5D7AFD006FF54A /* ButtonsSizeClass.storyboard */,
+				9301049F1B3B61E90050658C /* DynamicHeightColumns.storyboard */,
+				93609A8C1B3B0CCE0050C029 /* DynamicHeightLabelAndTextField.storyboard */,
+				932151AB1B3D7D84009654CF /* DynamicTextAndReadability.storyboard */,
+				937EBA381B39B887001A83F8 /* DynamicStackView.storyboard */,
+				93F720C91B3C4FF600041731 /* EqualWhiteSpace.storyboard */,
+				9301049B1B3B59E90050658C /* FixedHeightColumns.storyboard */,
+				93F720CD1B3C582300041731 /* GroupingViews.storyboard */,
+				936BFD0C1B3854CE00B5E955 /* NestedStackViews.storyboard */,
+				932151B11B3D8E48009654CF /* SelfSizingTableViewCells.storyboard */,
+				9339FDDF1B40880D0098CF0D /* ScrollView.storyboard */,
+				93609A881B3B08DA0050C029 /* SimpleLabelAndTextField.storyboard */,
+				93CF8D681B3321BE00BDBFC7 /* SimpleSingleView.storyboard */,
+				93DB21311B3712C10055D6EC /* SimpleStackView.storyboard */,
+				9339FDE41B4092FB0098CF0D /* SizeClasses.storyboard */,
+				93609A801B3B02590050C029 /* TwoDifferentWidthViews.storyboard */,
+				93F720C51B3C4BC700041731 /* ThreeEqualWidthButtons.storyboard */,
+				93609A7C1B3AFF5D0050C029 /* TwoEqualWidthViews.storyboard */,
+				93609A841B3B05740050C029 /* TwoViewsWithComplexWidths.storyboard */,
+				93F720C11B3C476800041731 /* TwoEqualWidthButtons.storyboard */,
+				9339FDEE1B40AB470098CF0D /* UIKitDynamics.storyboard */,
+			);
+			name = "Recipe Storyboards";
+			sourceTree = "<group>";
+		};
+		93CF8D751B33716200BDBFC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B538D1C81BA0562600674D8D /* Recipe.swift */,
+				B538D1CE1BA069ED00674D8D /* Recipe+Loading.swift */,
+				B538D1CC1BA05C5500674D8D /* Recipe+Storyboards.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A6AB0BA1BA10DD200E8D9ED /* UI Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A6AB0C21BA10DD200E8D9ED /* Build configuration list for PBXNativeTarget "UI Tests" */;
+			buildPhases = (
+				0A6AB0B71BA10DD200E8D9ED /* Sources */,
+				0A6AB0B81BA10DD200E8D9ED /* Frameworks */,
+				0A6AB0B91BA10DD200E8D9ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A6AB0C11BA10DD200E8D9ED /* PBXTargetDependency */,
+			);
+			name = "UI Tests";
+			productName = "Auto Layout CookbookUITests";
+			productReference = 0A6AB0BB1BA10DD200E8D9ED /* UI Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9317C4C61B31CE51003DD739 /* Auto Layout Cookbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9317C4EF1B31CE51003DD739 /* Build configuration list for PBXNativeTarget "Auto Layout Cookbook" */;
+			buildPhases = (
+				9317C4C31B31CE51003DD739 /* Sources */,
+				9317C4C41B31CE51003DD739 /* Frameworks */,
+				9317C4C51B31CE51003DD739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Auto Layout Cookbook";
+			productName = "Auto Layout Cookbook";
+			productReference = 9317C4C71B31CE51003DD739 /* Auto Layout Cookbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9317C4BF1B31CE51003DD739 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Rich Warren";
+				TargetAttributes = {
+					0A6AB0BA1BA10DD200E8D9ED = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 9317C4C61B31CE51003DD739;
+					};
+					9317C4C61B31CE51003DD739 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 9317C4C21B31CE51003DD739 /* Build configuration list for PBXProject "Auto Layout Cookbook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9317C4BE1B31CE51003DD739;
+			productRefGroup = 9317C4C81B31CE51003DD739 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9317C4C61B31CE51003DD739 /* Auto Layout Cookbook */,
+				0A6AB0BA1BA10DD200E8D9ED /* UI Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A6AB0B91BA10DD200E8D9ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9317C4C51B31CE51003DD739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932151B21B3D8E48009654CF /* SelfSizingTableViewCells.storyboard in Resources */,
+				937EBA3B1B39BB8A001A83F8 /* DynamicStackView.txt in Resources */,
+				9339FDE21B408CA80098CF0D /* ScrollView.txt in Resources */,
+				9339FDED1B40A5560098CF0D /* AnimatingChanges.txt in Resources */,
+				93609A851B3B05740050C029 /* TwoViewsWithComplexWidths.storyboard in Resources */,
+				93609A891B3B08DA0050C029 /* SimpleLabelAndTextField.storyboard in Resources */,
+				93DB21321B3712C10055D6EC /* SimpleStackView.storyboard in Resources */,
+				936B0DE41B3C92F60056A829 /* AspectFitImageView.storyboard in Resources */,
+				936BFD0D1B3854CE00B5E955 /* NestedStackViews.storyboard in Resources */,
+				93F720C61B3C4BC700041731 /* ThreeEqualWidthButtons.storyboard in Resources */,
+				93609A8B1B3B099C0050C029 /* SimpleLabelAndTextField.txt in Resources */,
+				93F720C21B3C476800041731 /* TwoEqualWidthButtons.storyboard in Resources */,
+				9301049E1B3B5E4F0050658C /* FixedHeightColumns.txt in Resources */,
+				9339FDE91B409DB60098CF0D /* AnimatingChanges.storyboard in Resources */,
+				932151B01B3D848B009654CF /* DynamicTextAndReadability.txt in Resources */,
+				93609A8D1B3B0CCE0050C029 /* DynamicHeightLabelAndTextField.storyboard in Resources */,
+				9317C4D51B31CE51003DD739 /* LaunchScreen.storyboard in Resources */,
+				932151AC1B3D7D84009654CF /* DynamicTextAndReadability.storyboard in Resources */,
+				9339FDEF1B40AB470098CF0D /* UIKitDynamics.storyboard in Resources */,
+				9301049C1B3B59E90050658C /* FixedHeightColumns.storyboard in Resources */,
+				9339FDE51B4092FB0098CF0D /* SizeClasses.storyboard in Resources */,
+				93B56C0F1B40ACAC00FA0799 /* UIKitDynamics.txt in Resources */,
+				930104A01B3B61E90050658C /* DynamicHeightColumns.storyboard in Resources */,
+				932151AA1B3CAD98009654CF /* AspectRatioImageView.txt in Resources */,
+				9339FDE71B4094690098CF0D /* SizeClasses.txt in Resources */,
+				93BFCC1C1B5D7AFD006FF54A /* ButtonsSizeClass.storyboard in Resources */,
+				93609A7F1B3AFFFC0050C029 /* TwoEqualWidthViews.txt in Resources */,
+				93609A811B3B02590050C029 /* TwoDifferentWidthViews.storyboard in Resources */,
+				93F720D01B3C5A6D00041731 /* GroupingViews.txt in Resources */,
+				93F720CC1B3C518100041731 /* EqualWhiteSpace.txt in Resources */,
+				9339FDE01B40880D0098CF0D /* ScrollView.storyboard in Resources */,
+				93609A911B3B0FDE0050C029 /* DynamicHeightLabelAndTextField.txt in Resources */,
+				932151A61B3CA861009654CF /* AspectFitImageView.txt in Resources */,
+				93609A7D1B3AFF5D0050C029 /* TwoEqualWidthViews.storyboard in Resources */,
+				93CF8D6A1B3321BE00BDBFC7 /* SimpleSingleView.storyboard in Resources */,
+				932151A81B3CABD5009654CF /* AspectRatioImageView.storyboard in Resources */,
+				93F720CE1B3C582300041731 /* GroupingViews.storyboard in Resources */,
+				9317C4D21B31CE51003DD739 /* Assets.xcassets in Resources */,
+				93F720C41B3C48B300041731 /* TwoEqualWidthButtons.txt in Resources */,
+				930104A41B3B644B0050658C /* DynamicHeightColumns.txt in Resources */,
+				93F720CA1B3C4FF600041731 /* EqualWhiteSpace.storyboard in Resources */,
+				932151B81B3D9291009654CF /* SelfSizingTableViewCells.txt in Resources */,
+				93BFCC1E1B5D7C73006FF54A /* ButtonsSizeClass.txt in Resources */,
+				931822781B3714C800A2F0EE /* SimpleStackView.txt in Resources */,
+				937EBA391B39B887001A83F8 /* DynamicStackView.storyboard in Resources */,
+				93609A871B3B06730050C029 /* TwoViewsWithComplexWidths.txt in Resources */,
+				93609A831B3B03A80050C029 /* TwoDifferentWidthViews.txt in Resources */,
+				93CF8D6F1B336CF200BDBFC7 /* Cookbook.plist in Resources */,
+				93CF8D731B336FE700BDBFC7 /* AdaptiveSingleView.storyboard in Resources */,
+				93CF8D7D1B33A40200BDBFC7 /* SimpleSingleView.txt in Resources */,
+				936BFD0F1B385D9800B5E955 /* NestedStackViews.txt in Resources */,
+				93F720C81B3C4D7700041731 /* ThreeEqualWidthButtons.txt in Resources */,
+				9317C4D01B31CE51003DD739 /* Main.storyboard in Resources */,
+				935936411B367B6B003F8151 /* AdaptiveSingleView.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A6AB0B71BA10DD200E8D9ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A6AB0BE1BA10DD200E8D9ED /* RecipeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9317C4C31B31CE51003DD739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B538D1C91BA0562600674D8D /* Recipe.swift in Sources */,
+				932151B41B3D8F14009654CF /* SelfSizingTableViewCell.swift in Sources */,
+				932151B61B3D904F009654CF /* SelfSizingTableViewController.swift in Sources */,
+				937EBA3E1B39BC26001A83F8 /* DynamicStackViewController.swift in Sources */,
+				0AD7ADED1BA20A640005CA42 /* CookbookStoryboardIdentifier.swift in Sources */,
+				93B56C111B40AFE600FA0799 /* UIKitDynamicsViewController.swift in Sources */,
+				932151AE1B3D8020009654CF /* DynamicTextViewController.swift in Sources */,
+				9317C4CD1B31CE51003DD739 /* RecipesContainerViewController.swift in Sources */,
+				93609A8F1B3B0EF40050C029 /* DynamicHeightLabelAndTextFieldViewController.swift in Sources */,
+				9339FDEB1B40A0100098CF0D /* AnimatingChangesViewController.swift in Sources */,
+				9317C4CB1B31CE51003DD739 /* AppDelegate.swift in Sources */,
+				930104A21B3B63590050658C /* DynamicHeightColumnsViewController.swift in Sources */,
+				93912DDC1B59D92600A99852 /* InformationViewController.swift in Sources */,
+				B538D1CF1BA069ED00674D8D /* Recipe+Loading.swift in Sources */,
+				B538D1CD1BA05C5500674D8D /* Recipe+Storyboards.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A6AB0C11BA10DD200E8D9ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9317C4C61B31CE51003DD739 /* Auto Layout Cookbook */;
+			targetProxy = 0A6AB0C01BA10DD200E8D9ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9317C4CE1B31CE51003DD739 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9317C4CF1B31CE51003DD739 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9317C4D31B31CE51003DD739 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9317C4D41B31CE51003DD739 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		93CF8D681B3321BE00BDBFC7 /* SimpleSingleView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93CF8D691B3321BE00BDBFC7 /* Base */,
+			);
+			name = SimpleSingleView.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A6AB0C31BA10DD200E8D9ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "UI Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.sample-code.Auto-Layout-CookbookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Auto Layout Cookbook";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		0A6AB0C41BA10DD200E8D9ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "UI Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.sample-code.Auto-Layout-CookbookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Auto Layout Cookbook";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		9317C4ED1B31CE51003DD739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9317C4EE1B31CE51003DD739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9317C4F01B31CE51003DD739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Auto Layout Cookbook/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Auto-Layout-Cookbook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9317C4F11B31CE51003DD739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Auto Layout Cookbook/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Auto-Layout-Cookbook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A6AB0C21BA10DD200E8D9ED /* Build configuration list for PBXNativeTarget "UI Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A6AB0C31BA10DD200E8D9ED /* Debug */,
+				0A6AB0C41BA10DD200E8D9ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9317C4C21B31CE51003DD739 /* Build configuration list for PBXProject "Auto Layout Cookbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9317C4ED1B31CE51003DD739 /* Debug */,
+				9317C4EE1B31CE51003DD739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9317C4EF1B31CE51003DD739 /* Build configuration list for PBXNativeTarget "Auto Layout Cookbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9317C4F01B31CE51003DD739 /* Debug */,
+				9317C4F11B31CE51003DD739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9317C4BF1B31CE51003DD739 /* Project object */;
+}

@@ -1,0 +1,7 @@
+This recipe displays a simple layout using a single vertical stack view. The stack view contains a label, an image view, and a button.
+
+The stack view uses a Fill distribution and a Fill alignment.
+
+The label is center aligned.
+
+Because the image view has lower content-hugging and compression-resistance priorities, it shrinks and stretches to fill the available space. It also uses an Aspect Fit mode to fill the available space without altering the image's aspect ratio.

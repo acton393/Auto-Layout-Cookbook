@@ -1,0 +1,3 @@
+This recipe demonstrates how to lay out an image view using an explicit aspect-ratio constraint. Here, you add a constraint to maintain the image's aspect ratio. This has the advantage of ensuring that the image always fills its frame, letting you position other views adjacent to the image. 
+
+Before you can create the constraint, you must know the image's aspect ratio. If you want to dynamically swap images, you must remove the old aspect-ratio constraint and add a new aspect-ratio constraint whenever the image changes.

@@ -1,0 +1,3 @@
+This recipe shows two views that fill the scene with a small margin. The orange view is twice as wide as the purple view.
+
+The purple view is pinned to the leading, top, and bottom. The orange view is pinned to the trailing, top, and bottom. There is a standard space between the two views, and the orange view's width is constrained to the purple view's width x 2.

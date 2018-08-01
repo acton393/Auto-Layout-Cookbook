@@ -1,0 +1,11 @@
+Often, you may want to define the size or position of negative space or white space in your layout. But because there is no way to add constraints to empty space in Auto Layout, instead you represent these spaces by using dummy views.
+
+This recipe demonstrates how to lay out two equal-width buttons. The larger button is sized to fit its title (if possible), and the smaller button is stretched to match the larger button. Next, any extra space is divided evenly, on either side of the buttons and between them. In Auto Layout, you represent these spaces by using three empty zero-height spacer views: leading, center, and trailing.
+
+The leading spacer view is pinned to the superview's leading edge and to the bottom layout guide. The center spacer view is pinned to the bottom layout guide, and the trailing spacer view is pinned to the trailing edge and bottom layout guide. Both buttons are pinned to the bottom layout guide.
+
+Additionally, there is a zero-point space between the buttons and the spacer views. All three spacer views are given an equal width. Both buttons are also given an equal width. Finally, greater-than-or-equal-to constraints are added to the buttons to ensure that there is a minimum standard spacing, just in case the layout won't fit in the available space.
+
+By default, the spacer views do not have an intrinsic content size, so they will stretch and shrink as the view's width changes.
+
+Note that if you are programmatically creating a layout in iOS 9.0 or later, consider using either NSLayoutGuide or UILayoutGuide instead of dummy views. The layout guides provide a lightweight way to define a rectangular space that interacts with Auto Layout, but that space is not part of the view hierarchy and does not contribute to (or interfere with) the responder chain.

@@ -1,0 +1,3 @@
+This recipe shows two views that fill the scene with a small margin. The blue view has a minimum width of 150 points. If there is enough space, the red view is twice as wide as the blue view. Otherwise, the red view fills the remaining space.
+
+In the example, the blue view is pinned to the leading, top, and bottom edges, and the red view is pinned to the trailing, top, and bottom edges. There is a standard space between the two views. The blue view's width is equal to or greater than 150 points, and an optional constraint pins the red view's width equal to the blue view's width times 2, with a high priority.

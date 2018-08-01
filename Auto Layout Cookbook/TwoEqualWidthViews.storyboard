@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A226d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DUl-ud-5qV">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="g2U-91-r0h">
+            <objects>
+                <viewController id="DUl-ud-5qV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZjM-rr-lyt"/>
+                        <viewControllerLayoutGuide type="bottom" id="jEs-25-8I6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LVr-zT-oKB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXy-OC-8da" userLabel="Yellow View">
+                                <rect key="frame" x="20" y="40" width="276" height="540"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spI-6I-wg2" userLabel="Green View">
+                                <rect key="frame" x="304" y="40" width="276" height="540"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.50588235290000005" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="spI-6I-wg2" firstAttribute="leading" secondItem="AXy-OC-8da" secondAttribute="trailing" constant="8" symbolic="YES" id="2HO-bi-9yY"/>
+                            <constraint firstItem="AXy-OC-8da" firstAttribute="leading" secondItem="LVr-zT-oKB" secondAttribute="leadingMargin" id="3Yj-rx-oM4"/>
+                            <constraint firstItem="AXy-OC-8da" firstAttribute="top" secondItem="ZjM-rr-lyt" secondAttribute="bottom" constant="20" id="4pp-9E-PVR"/>
+                            <constraint firstItem="spI-6I-wg2" firstAttribute="trailing" secondItem="LVr-zT-oKB" secondAttribute="trailingMargin" id="6xo-Oc-GdD"/>
+                            <constraint firstItem="spI-6I-wg2" firstAttribute="top" secondItem="ZjM-rr-lyt" secondAttribute="bottom" constant="20" id="DQa-sN-1T7"/>
+                            <constraint firstItem="jEs-25-8I6" firstAttribute="top" secondItem="spI-6I-wg2" secondAttribute="bottom" constant="20" id="Ie4-1E-TUU"/>
+                            <constraint firstItem="jEs-25-8I6" firstAttribute="top" secondItem="AXy-OC-8da" secondAttribute="bottom" constant="20" id="Mjr-Bl-wBr"/>
+                            <constraint firstItem="spI-6I-wg2" firstAttribute="width" secondItem="AXy-OC-8da" secondAttribute="width" id="PUG-Tj-vKQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y2R-Ys-f8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="344" y="254"/>
+        </scene>
+    </scenes>
+</document>

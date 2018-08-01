@@ -1,0 +1,5 @@
+This recipe shows a single blue view. Constraints stretch the view to fill the available space with a small margin.
+
+Unlike the Simple Single View recipe, this version adapts to its current context. The exact spacing of the top and bottom margins is at least 8 points away from the edge of the nearest neighbor and at least 20 points away from the top and bottom of the superview.
+
+You can see this layout when the view is displayed full screen. Long-tap on the blue view to switch to full-screen mode. As you rotate the device, the view automatically adapts to the presence or absence of the status bar. When the status bar is present, the view positions itself 8 points below the status bar. When the status bar is absent, it positions itself 20 points from the top of the screen.

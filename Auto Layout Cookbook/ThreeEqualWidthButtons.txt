@@ -1,0 +1,5 @@
+This recipe demonstrates how to lay out three buttons that you stretch to fill the scene while ensuring all three buttons have the same width.
+
+To lay out the buttons, you pin the small button to the superview's leading edge and the bottom layout guide, you pin the medium button to the bottom layout guide, and you pin the longer button to the superview's trailing edge and the bottom layout guide. Notice that there are standard spaces between the buttons, and the buttons are given equal width constraints.
+
+Each button has an intrinsic content size based on the button's title; in this layout, however, only the intrinsic height is used. The buttons have been given title sizes with different lengths, showing that the title size has no effect on the button's width. The buttons have a light gray background color to make it easier to see their size and position.

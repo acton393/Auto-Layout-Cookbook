@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recipes Container View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RecipesContainerViewController" customModule="Auto_Layout_Cookbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EPr-3O-CFE" userLabel="Outer Stack View">
+                                <rect key="frame" x="20" y="28" width="343" height="556.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="801" verticalHuggingPriority="801" horizontalCompressionResistancePriority="801" verticalCompressionResistancePriority="801" text="Loading Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxV-hg-d72">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <containerView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="800" verticalHuggingPriority="800" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="rRI-UP-N1C">
+                                        <rect key="frame" x="0.0" y="28.5" width="343" height="498"/>
+                                        <connections>
+                                            <segue destination="wE4-wx-jcI" kind="embed" identifier="Load View" id="hgT-qn-ZYV"/>
+                                        </connections>
+                                    </containerView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="IEm-bt-o3d" userLabel="Button Stack">
+                                        <rect key="frame" x="0.0" y="534.5" width="343" height="22"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="802" verticalHuggingPriority="802" horizontalCompressionResistancePriority="802" verticalCompressionResistancePriority="802" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMd-Zo-dhL">
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="22"/>
+                                                <state key="normal" title="Previous"/>
+                                                <connections>
+                                                    <action selector="showPreviousRecipe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0AL-pR-TJv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="803" verticalHuggingPriority="803" horizontalCompressionResistancePriority="803" verticalCompressionResistancePriority="803" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-jn-vEm">
+                                                <rect key="frame" x="127.5" y="0.0" width="88" height="22"/>
+                                                <connections>
+                                                    <segue destination="JLO-vd-LUw" kind="presentation" identifier="InformationView" id="1a7-85-9Tt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="802" verticalHuggingPriority="802" horizontalCompressionResistancePriority="802" verticalCompressionResistancePriority="802" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="al4-YC-mnh">
+                                                <rect key="frame" x="255.5" y="0.0" width="87.5" height="22"/>
+                                                <state key="normal" title="Next"/>
+                                                <connections>
+                                                    <action selector="showNextRecipe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="42s-hI-3dv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <gestureRecognizers/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="EPr-3O-CFE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9cJ-jU-9cF"/>
+                            <constraint firstItem="EPr-3O-CFE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" priority="999" constant="8" symbolic="YES" id="Huy-Y8-vkY"/>
+                            <constraint firstItem="EPr-3O-CFE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Rbc-Lo-4zb"/>
+                            <constraint firstItem="EPr-3O-CFE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="16" id="jvg-28-8BY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EPr-3O-CFE" secondAttribute="bottom" priority="750" constant="8" symbolic="YES" id="kwg-Xq-Kc5"/>
+                            <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="EPr-3O-CFE" secondAttribute="bottom" constant="16" id="swf-MH-xu7"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KRH-bh-Voh" appends="YES" id="OG1-4S-hO5"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="rRI-UP-N1C" id="T26-z4-gCK"/>
+                        <outlet property="titleLabel" destination="JxV-hg-d72" id="UIj-QF-uWS"/>
+                        <outletCollection property="navigationButtons" destination="dMd-Zo-dhL" collectionClass="NSMutableArray" id="QYQ-nE-ddX"/>
+                        <outletCollection property="navigationButtons" destination="hWd-jn-vEm" collectionClass="NSMutableArray" id="pMR-eT-Bhx"/>
+                        <outletCollection property="navigationButtons" destination="al4-YC-mnh" collectionClass="NSMutableArray" id="t3T-xr-mUx"/>
+                        <segue destination="XHV-NJ-SVm" kind="presentation" identifier="SimpleSingleView" modalTransitionStyle="flipHorizontal" id="d1t-jt-hlE"/>
+                        <segue destination="E2Z-ut-9yr" kind="presentation" identifier="AdaptiveSingleView" modalTransitionStyle="flipHorizontal" id="icX-Ex-Xsc"/>
+                        <segue destination="nYq-OS-SeX" kind="presentation" identifier="SimpleStackView" modalTransitionStyle="flipHorizontal" id="h2t-Nr-lOl"/>
+                        <segue destination="Xyi-gF-W4n" kind="presentation" identifier="NestedStackViews" modalTransitionStyle="flipHorizontal" id="t7f-iJ-uUn"/>
+                        <segue destination="JUT-A6-ceQ" kind="presentation" identifier="DynamicStackView" modalTransitionStyle="flipHorizontal" id="ndw-q9-BUx"/>
+                        <segue destination="Y87-V8-QDZ" kind="presentation" identifier="TwoEqualWidthViews" modalTransitionStyle="flipHorizontal" id="B6D-sY-BJR"/>
+                        <segue destination="iwW-t2-DH2" kind="presentation" identifier="TwoDifferentWidthViews" modalTransitionStyle="flipHorizontal" id="SRT-SD-tqn"/>
+                        <segue destination="2Pu-nS-XiV" kind="presentation" identifier="TwoViewsWithComplexWidths" modalTransitionStyle="flipHorizontal" id="gpo-uS-c6N"/>
+                        <segue destination="B5P-zz-OGQ" kind="presentation" identifier="SimpleLabelAndTextField" modalTransitionStyle="flipHorizontal" id="9uf-bv-WPX"/>
+                        <segue destination="iPi-b2-upE" kind="presentation" identifier="DymanicHeightLabelAndTextField" modalTransitionStyle="flipHorizontal" id="GXU-OY-oaI"/>
+                        <segue destination="7XW-cg-neY" kind="presentation" identifier="FixedHeightColumns" modalTransitionStyle="flipHorizontal" id="E6p-0G-E3Q"/>
+                        <segue destination="vPh-1T-wj9" kind="presentation" identifier="DynamicHeightColumns" modalTransitionStyle="flipHorizontal" id="zvO-hZ-uAk"/>
+                        <segue destination="PYE-lV-WMR" kind="presentation" identifier="TwoEqualWidthButtons" modalTransitionStyle="flipHorizontal" id="nqu-Ro-BEg"/>
+                        <segue destination="AOx-WX-bG1" kind="presentation" identifier="ThreeEqualWidthButtons" modalTransitionStyle="flipHorizontal" id="Wpo-Av-HEd"/>
+                        <segue destination="uj1-29-PRo" kind="presentation" identifier="EqualWhiteSpace" modalTransitionStyle="flipHorizontal" id="mnc-bp-W1m"/>
+                        <segue destination="ko7-xT-Ope" kind="presentation" identifier="GroupingViews" modalTransitionStyle="flipHorizontal" id="4Tj-OS-Dtj"/>
+                        <segue destination="NBw-Kt-cVK" kind="presentation" identifier="AspectFitImageView" modalTransitionStyle="flipHorizontal" id="gRp-0h-zhb"/>
+                        <segue destination="lWt-wz-LCk" kind="presentation" identifier="AspectRatioImageView" modalTransitionStyle="flipHorizontal" id="49r-GM-Egg"/>
+                        <segue destination="YU9-9L-3zO" kind="presentation" identifier="DynamicTextAndReadability" modalTransitionStyle="flipHorizontal" id="iwE-n5-cgB"/>
+                        <segue destination="P4g-dE-CjA" kind="presentation" identifier="SelfSizingTableViewCells" modalTransitionStyle="flipHorizontal" id="Kdl-Es-d1p"/>
+                        <segue destination="Mp3-pb-T1o" kind="presentation" identifier="ScrollView" modalTransitionStyle="flipHorizontal" id="IHg-gg-71D"/>
+                        <segue destination="TcU-FM-7A4" kind="presentation" identifier="SizeClasses" modalTransitionStyle="flipHorizontal" id="rel-2F-sU6"/>
+                        <segue destination="a5x-lm-Mnj" kind="presentation" identifier="AnimatingChanges" modalTransitionStyle="flipHorizontal" id="NwK-oa-YII"/>
+                        <segue destination="Cy7-0Z-1uI" kind="presentation" identifier="UIKitDynamics" modalTransitionStyle="flipHorizontal" id="Ob9-6L-Lsz"/>
+                        <segue destination="Enb-B8-4Rl" kind="presentation" identifier="ButtonsSizeClass" modalTransitionStyle="flipHorizontal" id="X2J-KI-epg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="KRH-bh-Voh">
+                    <connections>
+                        <action selector="displayFullScreen:" destination="BYZ-38-t0r" id="rXo-Ec-901"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="325" y="399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rRY-ni-255">
+            <objects>
+                <navigationController id="JLO-vd-LUw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h6V-T6-Afj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vA7-I0-M7m" kind="relationship" relationship="rootViewController" id="2pY-pk-zmA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azj-I9-e5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1154" y="-388"/>
+        </scene>
+        <!--SimpleStackView-->
+        <scene sceneID="RIf-oN-53E">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SimpleStackView" id="nYq-OS-SeX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMC-Cj-mrz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922.5" y="120"/>
+        </scene>
+        <!--NestedStackViews-->
+        <scene sceneID="bey-tC-vpu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NestedStackViews" id="Xyi-gF-W4n" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQa-hR-2tS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="166"/>
+        </scene>
+        <!--DynamicStackView-->
+        <scene sceneID="oQF-cL-fK7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DynamicStackView" id="JUT-A6-ceQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="shb-W1-77X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928" y="208"/>
+        </scene>
+        <!--SimpleSingleView-->
+        <scene sceneID="jLC-LK-uMP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SimpleSingleView" id="XHV-NJ-SVm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HJv-5F-tJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="250"/>
+        </scene>
+        <!--AdaptiveSingleView-->
+        <scene sceneID="Qqw-8z-p0j">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AdaptiveSingleView" id="E2Z-ut-9yr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Juc-JZ-Sbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="930" y="298"/>
+        </scene>
+        <!--TwoEqualWidthViews-->
+        <scene sceneID="ulh-Tw-87T">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TwoEqualWidthViews" id="Y87-V8-QDZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qor-sE-I89" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="344"/>
+        </scene>
+        <!--TwoDifferentWidthViews-->
+        <scene sceneID="cdQ-4R-0lG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TwoDifferentWidthViews" id="iwW-t2-DH2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ewg-qs-LW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="392"/>
+        </scene>
+        <!--TwoViewsWithComplexWidths-->
+        <scene sceneID="URA-kE-OQu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TwoViewsWithComplexWidths" id="2Pu-nS-XiV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M7e-O2-eSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="441"/>
+        </scene>
+        <!--SimpleLabelAndTextField-->
+        <scene sceneID="xrd-KY-oF6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SimpleLabelAndTextField" id="B5P-zz-OGQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TkR-gg-oC3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947" y="490"/>
+        </scene>
+        <!--DynamicHeightLabelAndTextField-->
+        <scene sceneID="vXy-jv-gUe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DynamicHeightLabelAndTextField" id="iPi-b2-upE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F0O-RX-s9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972.5" y="539"/>
+        </scene>
+        <!--FixedHeightColumns-->
+        <scene sceneID="oBU-bH-WSS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FixedHeightColumns" id="7XW-cg-neY" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8n-Xr-gt7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="933" y="586"/>
+        </scene>
+        <!--DynamicHeightColumns-->
+        <scene sceneID="eLx-3C-d7A">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DynamicHeightColumns" id="vPh-1T-wj9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lBa-jy-Fqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="631"/>
+        </scene>
+        <!--TwoEqualWidthButtons-->
+        <scene sceneID="mcg-YC-GwU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TwoEqualWidthButtons" id="PYE-lV-WMR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8iM-u7-I1F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="678"/>
+        </scene>
+        <!--ThreeEqualWidthButtons-->
+        <scene sceneID="0uE-9j-ktw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ThreeEqualWidthButtons" id="AOx-WX-bG1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kc4-xM-edl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298.5" y="143"/>
+        </scene>
+        <!--Information-->
+        <scene sceneID="Q1d-4f-9a0">
+            <objects>
+                <viewController id="vA7-I0-M7m" customClass="InformationViewController" customModule="Auto_Layout_Cookbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FP6-QG-4ws"/>
+                        <viewControllerLayoutGuide type="bottom" id="06e-J3-AUh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y1O-s1-jh5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcH-3l-8oR">
+                                <rect key="frame" x="20" y="0.0" width="560" height="580"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xcH-3l-8oR" firstAttribute="top" secondItem="Y1O-s1-jh5" secondAttribute="topMargin" id="4n6-xu-vzc"/>
+                            <constraint firstItem="xcH-3l-8oR" firstAttribute="leading" secondItem="Y1O-s1-jh5" secondAttribute="leadingMargin" id="8bW-JG-7dJ"/>
+                            <constraint firstItem="xcH-3l-8oR" firstAttribute="trailing" secondItem="Y1O-s1-jh5" secondAttribute="trailingMargin" id="Ha8-eQ-E5y"/>
+                            <constraint firstItem="xcH-3l-8oR" firstAttribute="top" secondItem="FP6-QG-4ws" secondAttribute="bottom" constant="20" id="nrX-oh-e3o"/>
+                            <constraint firstItem="06e-J3-AUh" firstAttribute="top" secondItem="xcH-3l-8oR" secondAttribute="bottom" constant="20" id="u7j-Bu-okR"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="nrX-oh-e3o"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Information" id="hmq-QN-4FU">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Fs9-5O-a2i">
+                            <connections>
+                                <segue destination="yjs-m3-vua" kind="unwind" unwindAction="dismissInformationViewController:" id="TeH-p8-dv6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="informationTextView" destination="xcH-3l-8oR" id="dCa-2g-orC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e87-Cr-Clb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yjs-m3-vua" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="-388"/>
+        </scene>
+        <!--ButtonsSizeClass-->
+        <scene sceneID="gYG-Bo-2PE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ButtonsSizeClass" id="Enb-B8-4Rl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jof-Kn-T7z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="231"/>
+        </scene>
+        <!--EqualWhiteSpace-->
+        <scene sceneID="LnL-Z6-F9B">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EqualWhiteSpace" id="uj1-29-PRo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wu5-z6-fdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1275" y="189"/>
+        </scene>
+        <!--GroupingViews-->
+        <scene sceneID="qZb-Cr-rTu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GroupingViews" id="ko7-xT-Ope" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mgQ-Ci-Ry9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1268" y="273"/>
+        </scene>
+        <!--AspectFitImageView-->
+        <scene sceneID="awM-p0-NYF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AspectFitImageView" id="NBw-Kt-cVK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IR1-mH-vLU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="321"/>
+        </scene>
+        <!--AspectRatioImageView-->
+        <scene sceneID="ruc-3k-XvA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AspectRatioImageView" id="lWt-wz-LCk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3A-QA-dGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1291" y="367"/>
+        </scene>
+        <!--DynamicTextAndReadability-->
+        <scene sceneID="IYq-fk-GUQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DynamicTextAndReadability" id="YU9-9L-3zO" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5di-ek-RUM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304" y="415"/>
+        </scene>
+        <!--SelfSizingTableViewCells-->
+        <scene sceneID="PQ0-Gf-eu8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SelfSizingTableViewCells" id="P4g-dE-CjA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gs1-Kz-nUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1297.5" y="464"/>
+        </scene>
+        <!--ScrollView-->
+        <scene sceneID="IRK-4m-QYw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ScrollView" id="Mp3-pb-T1o" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACL-Yw-OuA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253.5" y="513"/>
+        </scene>
+        <!--SizeClasses-->
+        <scene sceneID="USE-7d-Yew">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SizeClasses" id="TcU-FM-7A4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lzk-ci-6gY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1257.5" y="562"/>
+        </scene>
+        <!--AnimatingChanges-->
+        <scene sceneID="Wfm-rS-H2f">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AnimatingChanges" id="a5x-lm-Mnj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8x-y0-J2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278.5" y="609"/>
+        </scene>
+        <!--UIKitDynamics-->
+        <scene sceneID="jbh-is-li1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UIKitDynamics" id="Cy7-0Z-1uI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8h-nJ-xjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266" y="654"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wl9-un-WGj">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="wE4-wx-jcI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k6Y-JN-0i9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ty5-Vq-1v4"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aro-EL-Wlu" userLabel="Loading View">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="498"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gG6-qn-ffv">
+                                <rect key="frame" x="153" y="231" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" label="Loading"/>
+                        <constraints>
+                            <constraint firstItem="gG6-qn-ffv" firstAttribute="centerY" secondItem="aro-EL-Wlu" secondAttribute="centerY" id="Ws3-2D-wKP"/>
+                            <constraint firstItem="gG6-qn-ffv" firstAttribute="centerX" secondItem="aro-EL-Wlu" secondAttribute="centerX" id="oKp-rl-Q4c"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YjV-YH-oy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="1076.25"/>
+        </scene>
+    </scenes>
+</document>

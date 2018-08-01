@@ -1,0 +1,5 @@
+This recipe shows a single red view. Constraints stretch the view to fill the available space with a small margin.
+
+Note that the view uses a constant 20-point margin between the view and the top and bottom guides. This margin provides a decent default spacing between the red view and the edge of the superview--however, the result may be too much space when this scene is displayed just above or below other controls (for example, a status bar, navigation bar, or tab bar). For example, press and hold on the red view to display the full screen.
+
+To see a version that adapts to its context, see Adaptive Single View.

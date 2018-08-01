@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A226d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g74-cd-1s5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animating Changes View Controller-->
+        <scene sceneID="pF6-0J-KbU">
+            <objects>
+                <viewController id="g74-cd-1s5" customClass="AnimatingChangesViewController" customModule="Auto_Layout_Cookbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8BW-K3-u2V"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Hz-GG-j7n"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="yIv-Ja-kPM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAL-M6-fcl" userLabel="Red Box">
+                                <rect key="frame" x="20" y="314" width="560" height="266"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOr-dJ-mff" userLabel="Blue Box">
+                                <rect key="frame" x="20" y="40" width="560" height="266"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.32549019610000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FOr-dJ-mff" firstAttribute="leading" secondItem="yIv-Ja-kPM" secondAttribute="leadingMargin" id="8zW-pe-GTW"/>
+                            <constraint firstItem="FOr-dJ-mff" firstAttribute="top" secondItem="8BW-K3-u2V" secondAttribute="bottom" constant="20" id="D1o-jo-Q9T"/>
+                            <constraint firstItem="QAL-M6-fcl" firstAttribute="height" secondItem="FOr-dJ-mff" secondAttribute="height" id="IiQ-V3-au1"/>
+                            <constraint firstItem="QAL-M6-fcl" firstAttribute="leading" secondItem="yIv-Ja-kPM" secondAttribute="leadingMargin" id="Qfs-pw-rzy"/>
+                            <constraint firstItem="QAL-M6-fcl" firstAttribute="top" secondItem="FOr-dJ-mff" secondAttribute="bottom" constant="8" symbolic="YES" id="V1Q-rg-JRd"/>
+                            <constraint firstItem="QAL-M6-fcl" firstAttribute="trailing" secondItem="yIv-Ja-kPM" secondAttribute="trailingMargin" id="WtF-0S-Ee4"/>
+                            <constraint firstItem="FOr-dJ-mff" firstAttribute="trailing" secondItem="yIv-Ja-kPM" secondAttribute="trailingMargin" id="gqP-Fr-Fu2"/>
+                            <constraint firstItem="1Hz-GG-j7n" firstAttribute="top" secondItem="QAL-M6-fcl" secondAttribute="bottom" constant="20" id="pZL-bh-TG6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="pZL-bh-TG6" id="fnT-db-iSG"/>
+                        <outlet property="bottomView" destination="QAL-M6-fcl" id="3TD-gU-9SN"/>
+                        <outlet property="spaceBetweenViewsConstraints" destination="V1Q-rg-JRd" id="kNE-QW-Lga"/>
+                        <outlet property="topConstraint" destination="D1o-jo-Q9T" id="Kes-dt-odw"/>
+                        <outlet property="topView" destination="FOr-dJ-mff" id="TVB-V5-gyN"/>
+                        <outletCollection property="offscreenViews" destination="iot-mU-0z7" collectionClass="NSMutableArray" id="dMc-vM-miC"/>
+                        <outletCollection property="offscreenViews" destination="UmZ-6E-OEo" collectionClass="NSMutableArray" id="9k8-66-5hQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="shE-MT-PBW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="iot-mU-0z7" userLabel="Green Box">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" id="UmZ-6E-OEo" userLabel="Yellow Box">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="332" y="399"/>
+        </scene>
+    </scenes>
+</document>

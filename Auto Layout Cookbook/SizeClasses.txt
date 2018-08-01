@@ -1,0 +1,13 @@
+This recipe uses size-class-specific constraints:
+
+1) Compact-Compact and Regular-Compact layouts display the red and green boxes stacked horizontally.
+
+2) The Compact-Regular layout displays the red and green boxes stacked vertically.
+
+3) The Regular-Regular layout displays a 2 x 2 grid containing the red, blue, green, and yellow boxes.
+
+To support these layouts, the red and green boxes are installed on all size classes, but the blue and yellow boxes are installed only for the Regular-Regular layout.
+
+The Any-Compact layout defines the horizontal stack, and the Compact-Regular layout defines the vertical stack. Each size class installs only the constraints it needs for its layout.
+
+You can design all of this dynamic behavior directly in Interface Builder. Then whenever the size class changes, the system automatically changes the constraints and animates them.

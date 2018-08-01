@@ -1,0 +1,3 @@
+This recipe demonstrates how to dynamically change both the view hierarchy and the constraints at runtime, and animate the results.
+
+You animate changes to Auto Layout by changing a constraints constant, by changing an optional priority’s value, or by activating or deactivating a constraint inside an animation block. 

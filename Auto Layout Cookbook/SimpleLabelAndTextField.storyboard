@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A226d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZBt-Cf-BJy">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ulW-Ph-S6z">
+            <objects>
+                <viewController id="ZBt-Cf-BJy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3up-1r-6vb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kzd-y5-jLV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9a4-Dn-POc" userLabel="Root View">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c38-WG-Nsd">
+                                <rect key="frame" x="20" y="45" width="45" height="19"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOP-ah-HLn">
+                                <rect key="frame" x="72" y="40" width="508" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bOP-ah-HLn" firstAttribute="baseline" secondItem="c38-WG-Nsd" secondAttribute="baseline" identifier="Baseline Alignment" id="2R3-2H-bEt"/>
+                            <constraint firstItem="bOP-ah-HLn" firstAttribute="leading" secondItem="c38-WG-Nsd" secondAttribute="trailing" constant="8" symbolic="YES" identifier="Space Between Controls" id="3dc-pV-4gb"/>
+                            <constraint firstItem="c38-WG-Nsd" firstAttribute="leading" secondItem="9a4-Dn-POc" secondAttribute="leadingMargin" identifier="Label Leading" id="KC0-EH-pYm"/>
+                            <constraint firstItem="bOP-ah-HLn" firstAttribute="trailing" secondItem="9a4-Dn-POc" secondAttribute="trailingMargin" identifier="Text Field Trailing" id="KVp-SM-gep"/>
+                            <constraint firstItem="bOP-ah-HLn" firstAttribute="top" secondItem="3up-1r-6vb" secondAttribute="bottom" constant="20" identifier="Text Field Top" id="SSn-ge-8PY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qo6-ho-UQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176" y="285"/>
+        </scene>
+    </scenes>
+</document>

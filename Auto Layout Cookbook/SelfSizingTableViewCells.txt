@@ -1,0 +1,5 @@
+This recipe demonstrates how to create table view cells, where the cell height is determined by the cell's content using Auto Layout. In this example, each cell's height is determined by the text view's intrinsic content size--the more text in the text view, the taller the cell.
+
+For Auto Layout to calculate the text view's intrinsic content size, you must disable scrolling and then constrain the view's width (in this case, by pinning it to the superview's leading and trailing margins). Auto Layout then calculates an intrinsic height for the given width. 
+
+This example also uses dynamic type, which allows the user to change the font size at runtime. As the font size changes, the cells automatically adjust their size.

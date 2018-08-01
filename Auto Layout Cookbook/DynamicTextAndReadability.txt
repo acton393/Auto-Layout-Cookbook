@@ -1,0 +1,3 @@
+This recipe demonstrates how to lay out text using the readability guidelines. These guidelines define the maximum width for any text element, to ensure that a user can comfortably track each line without having to move one’s head. In addition, the text elements use dynamic type, so that users can adjust the font size for the app. In particular, the view controller observes the UIContentSizeCategoryDidChangeNotification notification and updates the text elements if the font changes at runtime.
+
+The root view's readable content guides change based on the size of the dynamic type. One can see this change most easily when running the sample code on an iPad simulator in landscape orientation.

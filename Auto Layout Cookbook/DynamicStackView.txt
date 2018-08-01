@@ -1,0 +1,1 @@
+This recipe demonstrates how to dynamically add and remove items from a stack view while animating the change. The DynamicStackViewController class also programmatically creates and populates stack views at runtime.

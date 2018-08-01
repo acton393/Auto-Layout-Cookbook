@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A226d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wTV-4D-ytD">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EdM-D7-5ay">
+            <objects>
+                <viewController id="wTV-4D-ytD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="flT-kT-ybQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aec-Vm-u9z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JTn-sP-qnB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z76-Et-cUq" userLabel="Top Content">
+                                <rect key="frame" x="20" y="40" width="560" height="131"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mU1-HF-HUk" userLabel="Bottom Content">
+                                <rect key="frame" x="20" y="449" width="560" height="131"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flowers" translatesAutoresizingMaskIntoConstraints="NO" id="CKr-oz-ces">
+                                <rect key="frame" x="150" y="179" width="300" height="262"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CKr-oz-ces" firstAttribute="centerX" secondItem="JTn-sP-qnB" secondAttribute="centerX" id="1BY-y7-Hbz"/>
+                            <constraint firstItem="Aec-Vm-u9z" firstAttribute="top" secondItem="mU1-HF-HUk" secondAttribute="bottom" constant="20" id="5tf-Vp-Yc2"/>
+                            <constraint firstItem="mU1-HF-HUk" firstAttribute="trailing" secondItem="JTn-sP-qnB" secondAttribute="trailingMargin" id="7eI-x7-CgU"/>
+                            <constraint firstItem="Z76-Et-cUq" firstAttribute="trailing" secondItem="JTn-sP-qnB" secondAttribute="trailingMargin" id="Ayr-oZ-TVE"/>
+                            <constraint firstItem="CKr-oz-ces" firstAttribute="top" secondItem="Z76-Et-cUq" secondAttribute="bottom" constant="8" symbolic="YES" id="BtI-2E-Sk8"/>
+                            <constraint firstItem="mU1-HF-HUk" firstAttribute="leading" secondItem="JTn-sP-qnB" secondAttribute="leadingMargin" id="FSu-Bf-PBv"/>
+                            <constraint firstItem="CKr-oz-ces" firstAttribute="height" secondItem="mU1-HF-HUk" secondAttribute="height" multiplier="2" id="QCA-EO-6hK"/>
+                            <constraint firstItem="Z76-Et-cUq" firstAttribute="top" secondItem="flT-kT-ybQ" secondAttribute="bottom" constant="20" id="fEK-58-t9L"/>
+                            <constraint firstItem="mU1-HF-HUk" firstAttribute="top" secondItem="CKr-oz-ces" secondAttribute="bottom" constant="8" symbolic="YES" id="nNx-3g-9kS"/>
+                            <constraint firstItem="Z76-Et-cUq" firstAttribute="leading" secondItem="JTn-sP-qnB" secondAttribute="leadingMargin" id="rVb-4w-E8u"/>
+                            <constraint firstItem="CKr-oz-ces" firstAttribute="height" secondItem="Z76-Et-cUq" secondAttribute="height" multiplier="2" id="usS-7V-h53"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYp-a0-3t7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="777" y="392"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flowers" width="300" height="400"/>
+    </resources>
+</document>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Title</key>
+		<string>Simple Stack View</string>
+		<key>Identifier</key>
+		<string>SimpleStackView</string>
+		<key>Document</key>
+		<string>SimpleStackView.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Nested Stack Views</string>
+		<key>Identifier</key>
+		<string>NestedStackViews</string>
+		<key>Document</key>
+		<string>NestedStackViews.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Dynamic Stack View</string>
+		<key>Identifier</key>
+		<string>DynamicStackView</string>
+		<key>Document</key>
+		<string>DynamicStackView.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Simple Single View</string>
+		<key>Identifier</key>
+		<string>SimpleSingleView</string>
+		<key>Document</key>
+		<string>SimpleSingleView.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Adaptive Single View</string>
+		<key>Identifier</key>
+		<string>AdaptiveSingleView</string>
+		<key>Document</key>
+		<string>AdaptiveSingleView.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Two Equal Width Views</string>
+		<key>Identifier</key>
+		<string>TwoEqualWidthViews</string>
+		<key>Document</key>
+		<string>TwoEqualWidthViews.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Two Views with Different Widths</string>
+		<key>Identifier</key>
+		<string>TwoDifferentWidthViews</string>
+		<key>Document</key>
+		<string>TwoDifferentWidthViews.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Two Views with Complex Widths</string>
+		<key>Identifier</key>
+		<string>TwoViewsWithComplexWidths</string>
+		<key>Document</key>
+		<string>TwoViewsWithComplexWidths.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Simple Label and Text Field</string>
+		<key>Identifier</key>
+		<string>SimpleLabelAndTextField</string>
+		<key>Document</key>
+		<string>SimpleLabelAndTextField.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Label and Text Field with Dynamic Height</string>
+		<key>Identifier</key>
+		<string>DynamicHeightLabelAndTextField</string>
+		<key>Document</key>
+		<string>DynamicHeightLabelAndTextField.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Fixed Height, Aligned Columns</string>
+		<key>Identifier</key>
+		<string>FixedHeightColumns</string>
+		<key>Document</key>
+		<string>FixedHeightColumns.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Dynamic Height, Aligned Columns</string>
+		<key>Identifier</key>
+		<string>DynamicHeightColumns</string>
+		<key>Document</key>
+		<string>DynamicHeightColumns.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Two Equal Width Buttons</string>
+		<key>Identifier</key>
+		<string>TwoEqualWidthButtons</string>
+		<key>Document</key>
+		<string>TwoEqualWidthButtons.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Three Equal Width Buttons</string>
+		<key>Identifier</key>
+		<string>ThreeEqualWidthButtons</string>
+		<key>Document</key>
+		<string>ThreeEqualWidthButtons.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Defining Equal-Sized White Spaces</string>
+		<key>Identifier</key>
+		<string>EqualWhiteSpace</string>
+		<key>Document</key>
+		<string>EqualWhiteSpace.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Buttons and Size-Classes</string>
+		<key>Identifier</key>
+		<string>ButtonsSizeClass</string>
+		<key>Document</key>
+		<string>ButtonsSizeClass.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Grouping Views</string>
+		<key>Identifier</key>
+		<string>GroupingViews</string>
+		<key>Document</key>
+		<string>GroupingViews.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Image Views and Aspect Fit Mode</string>
+		<key>Identifier</key>
+		<string>AspectFitImageView</string>
+		<key>Document</key>
+		<string>AspectFitImageView.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Image Views and Aspect Ratio Constraints</string>
+		<key>Identifier</key>
+		<string>AspectRatioImageView</string>
+		<key>Document</key>
+		<string>AspectRatioImageView.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Dynamic Text and Readability</string>
+		<key>Identifier</key>
+		<string>DynamicTextAndReadability</string>
+		<key>Document</key>
+		<string>DynamicTextAndReadability.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Self Sizing Table View Cells</string>
+		<key>Identifier</key>
+		<string>SelfSizingTableViewCells</string>
+		<key>Document</key>
+		<string>SelfSizingTableViewCells.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Working with Scroll Views</string>
+		<key>Identifier</key>
+		<string>ScrollView</string>
+		<key>Document</key>
+		<string>ScrollView.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Size Class Specific Layouts</string>
+		<key>Identifier</key>
+		<string>SizeClasses</string>
+		<key>Document</key>
+		<string>SizeClasses.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Animating Dynamic Changes</string>
+		<key>Identifier</key>
+		<string>AnimatingChanges</string>
+		<key>Document</key>
+		<string>AnimatingChanges.txt</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>UIKit Dynamics and Auto Layout</string>
+		<key>Identifier</key>
+		<string>UIKitDynamics</string>
+		<key>Document</key>
+		<string>UIKitDynamics.txt</string>
+	</dict>
+</array>
+</plist>

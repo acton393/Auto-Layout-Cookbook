@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A226d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zIA-dE-mJf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="SWp-ye-YBw">
+            <objects>
+                <viewController id="zIA-dE-mJf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iLQ-nb-Lsd"/>
+                        <viewControllerLayoutGuide type="bottom" id="sjH-UG-dnI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dz5-zm-4CA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bp-qU-b2A" userLabel="Leading Dummy View">
+                                <rect key="frame" x="0.0" y="580" width="86" height="0.0"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="gJA-Cg-VBV"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zje-at-ARN">
+                                <rect key="frame" x="86" y="550" width="171" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Short"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gk9-lM-gb5" userLabel="Center Dummy View">
+                                <rect key="frame" x="257" y="580" width="86" height="0.0"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="aos-wl-nZ0"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQR-y1-518">
+                                <rect key="frame" x="343" y="550" width="171" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Much, Much Longer Title"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3pc-Dz-EqN" userLabel="Trailing Dummy View">
+                                <rect key="frame" x="514" y="580" width="86" height="0.0"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="LGW-v3-iak"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7bp-qU-b2A" firstAttribute="leading" secondItem="dz5-zm-4CA" secondAttribute="leading" id="0P3-D8-dmA"/>
+                            <constraint firstItem="sjH-UG-dnI" firstAttribute="top" secondItem="7bp-qU-b2A" secondAttribute="bottom" constant="20" id="3Qm-XB-TWD"/>
+                            <constraint firstItem="Zje-at-ARN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dz5-zm-4CA" secondAttribute="leadingMargin" id="5tI-Ss-ZXu"/>
+                            <constraint firstItem="sjH-UG-dnI" firstAttribute="top" secondItem="3pc-Dz-EqN" secondAttribute="bottom" constant="20" id="77k-UF-qcB"/>
+                            <constraint firstItem="3pc-Dz-EqN" firstAttribute="trailing" secondItem="dz5-zm-4CA" secondAttribute="trailing" id="7rf-aN-bVs"/>
+                            <constraint firstItem="7bp-qU-b2A" firstAttribute="width" secondItem="3pc-Dz-EqN" secondAttribute="width" id="LFs-5e-jzE"/>
+                            <constraint firstItem="3pc-Dz-EqN" firstAttribute="leading" secondItem="XQR-y1-518" secondAttribute="trailing" id="LKX-6i-7QK"/>
+                            <constraint firstItem="Zje-at-ARN" firstAttribute="leading" secondItem="7bp-qU-b2A" secondAttribute="trailing" id="Lqw-3r-of2"/>
+                            <constraint firstItem="Zje-at-ARN" firstAttribute="width" secondItem="XQR-y1-518" secondAttribute="width" id="Oud-hN-ysX"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="XQR-y1-518" secondAttribute="trailing" id="PhT-iX-tuC"/>
+                            <constraint firstItem="sjH-UG-dnI" firstAttribute="top" secondItem="XQR-y1-518" secondAttribute="bottom" constant="20" id="Qkv-qc-z24"/>
+                            <constraint firstItem="sjH-UG-dnI" firstAttribute="top" secondItem="gk9-lM-gb5" secondAttribute="bottom" constant="20" id="VAR-fd-LXL"/>
+                            <constraint firstItem="gk9-lM-gb5" firstAttribute="leading" secondItem="Zje-at-ARN" secondAttribute="trailing" id="g1V-0T-euS"/>
+                            <constraint firstItem="XQR-y1-518" firstAttribute="leading" secondItem="gk9-lM-gb5" secondAttribute="trailing" id="hAR-Xa-Fux"/>
+                            <constraint firstItem="sjH-UG-dnI" firstAttribute="top" secondItem="Zje-at-ARN" secondAttribute="bottom" constant="20" id="hYN-6Y-jw5"/>
+                            <constraint firstItem="XQR-y1-518" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zje-at-ARN" secondAttribute="trailing" constant="8" symbolic="YES" id="mAf-K2-vYs"/>
+                            <constraint firstItem="7bp-qU-b2A" firstAttribute="width" secondItem="gk9-lM-gb5" secondAttribute="width" id="qf2-Mj-AwA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YY3-1t-0R5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="507" y="385"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A226d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MMH-sT-3Gd">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="usy-j3-hLo">
+            <objects>
+                <viewController id="MMH-sT-3Gd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eAh-m6-X5b"/>
+                        <viewControllerLayoutGuide type="bottom" id="LIw-ZP-mhh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mb7-gr-8NR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcK-1s-jJQ">
+                                <rect key="frame" x="20" y="550" width="182" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Short"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AYh-7D-8LD">
+                                <rect key="frame" x="210" y="550" width="181" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Medium"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUQ-lB-t5s">
+                                <rect key="frame" x="399" y="550" width="182" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Long Button Title"/>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LIw-ZP-mhh" firstAttribute="top" secondItem="LcK-1s-jJQ" secondAttribute="bottom" constant="20" id="8vL-DF-rkh"/>
+                            <constraint firstItem="AYh-7D-8LD" firstAttribute="leading" secondItem="LcK-1s-jJQ" secondAttribute="trailing" constant="8" symbolic="YES" id="8yh-KG-cha"/>
+                            <constraint firstItem="NUQ-lB-t5s" firstAttribute="trailing" secondItem="mb7-gr-8NR" secondAttribute="trailingMargin" id="Bz1-gp-KPP"/>
+                            <constraint firstItem="LIw-ZP-mhh" firstAttribute="top" secondItem="NUQ-lB-t5s" secondAttribute="bottom" constant="20" id="FiV-6s-vtY"/>
+                            <constraint firstItem="AYh-7D-8LD" firstAttribute="width" secondItem="LcK-1s-jJQ" secondAttribute="width" id="Lj2-bI-Tqb"/>
+                            <constraint firstItem="LIw-ZP-mhh" firstAttribute="top" secondItem="AYh-7D-8LD" secondAttribute="bottom" constant="20" id="aE4-K5-Js4"/>
+                            <constraint firstItem="NUQ-lB-t5s" firstAttribute="width" secondItem="LcK-1s-jJQ" secondAttribute="width" id="cIB-kt-GM4"/>
+                            <constraint firstItem="NUQ-lB-t5s" firstAttribute="leading" secondItem="AYh-7D-8LD" secondAttribute="trailing" constant="8" symbolic="YES" id="gGf-tZ-R24"/>
+                            <constraint firstItem="LcK-1s-jJQ" firstAttribute="leading" secondItem="mb7-gr-8NR" secondAttribute="leadingMargin" id="wb4-Z2-rel"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HNo-qn-Njd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="402"/>
+        </scene>
+    </scenes>
+</document>

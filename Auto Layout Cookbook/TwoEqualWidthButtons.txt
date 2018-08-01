@@ -1,0 +1,5 @@
+This recipe demonstrates laying out two buttons that are both stretched to fill the scene while maintaining an equal width.
+
+The small button is pinned to the superview's leading edge and the bottom layout guide. The longer button is pinned to the superview's trailing edge and the bottom layout guide. There is a standard space between the two buttons, and the buttons are given an equal width constraint.
+
+Each button has an intrinsic content size based on the button's title; however, only the intrinsic height is used in this layout. The buttons have been given title sizes with very different lengths, showing that the title size has no effect on the button's width. Also, the buttons have a light gray background color, making it easier to see their size and position.

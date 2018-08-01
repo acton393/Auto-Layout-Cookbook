@@ -1,0 +1,11 @@
+Occasionally, you may want to gather a collection of controls and views and lay them out as a group. For example, you may want to center a group of controls relative to another view. Typically, a good approach is to add a dummy view to your view hierarchy. That view does not display any additional information. It simply acts as a container for your controls.
+
+When working with dummy views, it's helpful to mentally separate the internal constraints (the constraints used to lay out your dummy view's content) and the external constraints (the constraints used to size and position your dummy view relative to the rest of your user interface). But because dummy views don't actually encapsulate their content, any optional internal constraints will still be compared with conflicting external constraints when calculating your layout's solution.
+
+Typically, you adjust the content-hugging and compression-resistance priorities of any controls inside your dummy view, to make sure that they don't conflict with the content hugging and compression resistance of controls outside the dummy views, since these conflicts could lead to ambiguous layouts.
+
+This sample uses a single dummy view containing a combination of labels and switches. This dummy view is then centered both horizontally and vertically in its superview.
+
+Note that if you are programmatically creating a layout in iOS 9.0 or later, instead of dummy views consider using either NSLayoutGuide or UILayoutGuide. The layout guides provide a lightweight way to define a rectangular space that interacts with Auto Layout, but they are not part of the view hierarchy and do not contribute to (or interfere with) the responder chain.
+
+You might also consider using a stack view as a more powerful alternative, because stack views both group and lay out their content.

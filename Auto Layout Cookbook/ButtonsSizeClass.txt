@@ -1,0 +1,7 @@
+This recipe demonstrates how to lay out two buttons that are both stretched to fill the scene. The layout of the buttons varies depending on the view's size class.
+
+For Compact-Regular views (iPhone Portrait), the views should be stacked vertically and stretched to fill the entire view's width. For all other size classes (iPhone Landscape and all iPad), the views should be laid out in a row horizontally and have an equal width.
+
+This recipe requires two sets of constraints: The horizontal layout is defined in the constraints of the Any-Any size class. Then, modify these constraints to create the vertical stack in the  Compact-Regular size class. This involves both adding and removing constraints.
+
+Other solutions may also produce valid layouts for all the Final size classes (Compact-Compact, Compact-Regular, Regular-Compact, and Regular-Regular), but this particular layout guarantees that none of the Base size classes have any warnings or errors as well.

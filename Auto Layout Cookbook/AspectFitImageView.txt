@@ -1,0 +1,5 @@
+This recipe demonstrates how to lay out an image view using the Aspect Fit mode. When you are using this mode, Auto Layout constraints determine the size and location of the image view's frame. Then the image view scales the image so that it fits within the frame while maintaining the image's aspect ratio. The main advantage of this approach is that you can use it for any image of any size and any aspect ratio. Furthermore, you don't have to know the image's aspect ratio. This makes it easy for you to dynamically swap images at runtime.
+
+Sometimes the image view's frame may be larger than the image. Typically, the image fills the image view either vertically or horizontally, but not both. If you need to align objects closely to the image, you may need to use the Scale To Fill mode and add explicit constraints to maintain the image's aspect ratio.
+
+In this recipe, the image view is twice as tall as the top and bottom content views. The image view is also centered horizontally, and it has a light gray background, to make it easier to see how the image is positioned inside the view's frame.

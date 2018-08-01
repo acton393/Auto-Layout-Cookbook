@@ -1,0 +1,7 @@
+This recipe demonstrates how to lay out rows of label-and-text-field pairs. Each row is baseline aligned and is vertically positioned based on the height of the text field. This approach assumes that the text field will always be taller than the label.
+
+To lay out the rows correctly, the labels are pinned to the superview's leading margin, the text fields are pinned to the trailing margin, and the views have a standard space between them. The text fields are also set to have an equal width.
+
+The text fields have a lower content-hugging priority than the labels do, so they are stretched to fill the available space. The labels are also stretched, to the size of the longest label. The label text is right aligned, so that the text appears to align with the edge of the text fields.
+
+For a recipe that dynamically calculates the vertical layout based on the tallest view, see Dynamic Height Columns.

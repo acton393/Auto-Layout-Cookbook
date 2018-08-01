@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A226d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KES-Ta-Jth">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Fel-Co-5Ca">
+            <objects>
+                <viewController id="KES-Ta-Jth" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pRn-EK-gz1"/>
+                        <viewControllerLayoutGuide type="bottom" id="oKx-vh-YoC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0vW-gt-Ih5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ug-p6-Wba" userLabel="Dummy View">
+                                <rect key="frame" x="239" y="232" width="122" height="137"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Controls" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zd-ch-0wL">
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="20"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpu-zJ-5KH">
+                                        <rect key="frame" x="0.0" y="33" width="65" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skew" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0q-M3-Aai">
+                                        <rect key="frame" x="0.0" y="111" width="65" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EQW-to-94i">
+                                        <rect key="frame" x="73" y="28" width="51" height="31"/>
+                                        <animations/>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HLI-EQ-QMg">
+                                        <rect key="frame" x="73" y="67" width="51" height="31"/>
+                                        <animations/>
+                                    </switch>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="diR-L3-h4b">
+                                        <rect key="frame" x="73" y="106" width="51" height="31"/>
+                                        <animations/>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stabilize" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cE8-ab-qVb">
+                                        <rect key="frame" x="0.0" y="72" width="65" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="diR-L3-h4b" secondAttribute="trailing" id="0RS-Hb-s9b"/>
+                                    <constraint firstItem="Bpu-zJ-5KH" firstAttribute="leading" secondItem="8Ug-p6-Wba" secondAttribute="leading" id="2b7-JD-Jfb"/>
+                                    <constraint firstItem="HLI-EQ-QMg" firstAttribute="top" secondItem="EQW-to-94i" secondAttribute="bottom" constant="8" symbolic="YES" id="D19-X6-Xsz"/>
+                                    <constraint firstItem="HLI-EQ-QMg" firstAttribute="leading" secondItem="cE8-ab-qVb" secondAttribute="trailing" constant="8" symbolic="YES" id="F51-wD-oNj"/>
+                                    <constraint firstItem="EQW-to-94i" firstAttribute="centerY" secondItem="Bpu-zJ-5KH" secondAttribute="centerY" id="NZR-ls-9wu"/>
+                                    <constraint firstItem="cE8-ab-qVb" firstAttribute="leading" secondItem="8Ug-p6-Wba" secondAttribute="leading" id="NtR-a9-An8"/>
+                                    <constraint firstItem="0zd-ch-0wL" firstAttribute="top" secondItem="8Ug-p6-Wba" secondAttribute="top" id="U6f-Ag-mCA"/>
+                                    <constraint firstItem="HLI-EQ-QMg" firstAttribute="centerY" secondItem="cE8-ab-qVb" secondAttribute="centerY" id="cFU-CC-dPH"/>
+                                    <constraint firstItem="diR-L3-h4b" firstAttribute="leading" secondItem="d0q-M3-Aai" secondAttribute="trailing" constant="8" symbolic="YES" id="ePO-16-k0n"/>
+                                    <constraint firstAttribute="trailing" secondItem="HLI-EQ-QMg" secondAttribute="trailing" id="ePl-jS-mEe"/>
+                                    <constraint firstAttribute="bottom" secondItem="diR-L3-h4b" secondAttribute="bottom" id="iVW-Ft-bOH"/>
+                                    <constraint firstItem="0zd-ch-0wL" firstAttribute="leading" secondItem="8Ug-p6-Wba" secondAttribute="leading" id="ijW-6E-mrU"/>
+                                    <constraint firstAttribute="trailing" secondItem="0zd-ch-0wL" secondAttribute="trailing" id="jyi-n9-cJM"/>
+                                    <constraint firstAttribute="trailing" secondItem="EQW-to-94i" secondAttribute="trailing" id="tFa-v2-2Y9"/>
+                                    <constraint firstItem="EQW-to-94i" firstAttribute="leading" secondItem="Bpu-zJ-5KH" secondAttribute="trailing" constant="8" symbolic="YES" id="tbY-CH-MFc"/>
+                                    <constraint firstItem="EQW-to-94i" firstAttribute="top" secondItem="0zd-ch-0wL" secondAttribute="bottom" constant="8" symbolic="YES" id="u6x-w3-oIb"/>
+                                    <constraint firstItem="d0q-M3-Aai" firstAttribute="leading" secondItem="8Ug-p6-Wba" secondAttribute="leading" id="uRr-D6-E8i"/>
+                                    <constraint firstItem="diR-L3-h4b" firstAttribute="centerY" secondItem="d0q-M3-Aai" secondAttribute="centerY" id="utf-Lq-7h9"/>
+                                    <constraint firstItem="diR-L3-h4b" firstAttribute="top" secondItem="HLI-EQ-QMg" secondAttribute="bottom" constant="8" symbolic="YES" id="vMF-qt-nE0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Ug-p6-Wba" firstAttribute="centerY" secondItem="0vW-gt-Ih5" secondAttribute="centerY" id="Zt5-7w-ALa"/>
+                            <constraint firstItem="8Ug-p6-Wba" firstAttribute="centerX" secondItem="0vW-gt-Ih5" secondAttribute="centerX" id="r84-yE-5x6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PB9-7K-uFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="555" y="-143"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,7 @@
+This recipe demonstrates how to mix UIKit Dynamics and Auto Layout.
+
+When a view's position is controlled by UIKit Dynamics, you must use frame-based layout for that view. Set its translatesAutoresizingMaskIntoConstraints property to true, and do not use Auto Layout constraints to define its position or size.
+
+You can, however, use Auto Layout to lay out the view's content or to lay out other items relative to this view (for example, a caption label that should move relative to the view.)
+
+In this recipe, you are defining the view as an accessory view. By default, these views have translatesAutoresizingMaskIntoConstraints set to true.
